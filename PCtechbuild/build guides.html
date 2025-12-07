@@ -1,4 +1,24 @@
 <!DOCTYPE html>
+
+<script
+    src="https://www.datadoghq-browser-agent.com/us5/v6/datadog-rum.js"
+    type="text/javascript">
+</script>
+<script>
+    window.DD_RUM && window.DD_RUM.init({
+      clientToken: 'pub268450fbc7a32ce9af7a4c6b7afee3e4',
+      applicationId: 'bc74ca74-88f4-47ed-91bd-f4a210cef96a',
+      site: 'us5.datadoghq.com',
+      service: 'build-guides',
+      env: 'prod',
+      // Specify a version number to identify the deployed version of your application in Datadog
+      // version: '1.0.0',
+      sessionSampleRate: 100,
+      sessionReplaySampleRate: 100,
+      trackBfcacheViews: true,
+      defaultPrivacyLevel: 'mask-user-input',
+    });
+</script>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
